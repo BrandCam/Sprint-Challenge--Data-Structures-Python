@@ -21,19 +21,3 @@ class RingBuffer:
       if item is not None:
         arr.append(item)
     return arr
-
-buffer = RingBuffer(5)
-print(buffer.append('a'))
-print(buffer.append('b'))
-print(buffer.append('c'))
-print(buffer.append('d'))
-print(buffer.append('e'))
-print(buffer.get())
-print("--------")
-print(buffer.append('f'))
-print(len(buffer.storage))
-print(buffer.get())
-print('---0---')
-print(buffer.append('g'))
-print(buffer.append('h'))
-print(buffer.append('i'))
